@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>soundcloud</title>
+</head>
+
+<body>
+    <header class="set-width">
+        <div class="brand-logo">
+            <img src="images/logo.png" alt="brand-logo">
+            <span class="brand-logo-name">soundcloud</span>
+
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+
+            </ul>
+
+        </nav>
+        <span class="bars"></span>
+    </header>
+    <section class="container set-width">
+        <div class="image-wrapper">
+            <div class="lady-image">
+
+            </div>
+        </div>
+        <div class="call-for-action">
+            <h1 class="title">Feel The Music</h1>
+            <span class="subtitle">Stream over 20 thousands songs in one click.</span>
+            <a href="join.html"><button>Join Now</button> </a>
+        </div>
+    </section>
+
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="circle-3"></div>
+</body>
+<script>
+    $(function () {
+        $(".bars").on("click", function () {
+            if ($(".menu").hasClass("active")) {
+                $(".menu").removeClass("active");
+            }
+            else {
+                $(".menu").addClass("active");
+            }
+        });
+    });
+</script>
+
+</html>

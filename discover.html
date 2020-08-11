@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/discover.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>soundcloud</title>
+</head>
+
+<body>
+    <header class="set-width">
+        <div class="brand-logo">
+            <img src="images/logo.png" alt="brand-logo">
+            <a href="index.html"> <span class="brand-logo-name">soundcloud</span></a>
+
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+
+            </ul>
+
+        </nav>
+        <span class="bars"></span>
+    </header>
+    <section class="container set-width">
+        <div class="card">
+
+            <h1 class="title">Discover new music</h1>
+
+
+            <div class="charts">
+                <div class="chart microphone">
+                    <img src="images/microphone.svg" alt="microphone">
+                    <span class="name">Charts</span>
+                </div>
+
+                <div class="chart albums">
+                    <img src="images/albums.svg" alt="albums">
+                    <span class="name">Charts</span>
+                </div>
+
+                <div class="chart more">
+                    <img src="images/more.svg" alt="more">
+                    <span class="name">Charts</span>
+                </div>
+            </div>
+
+
+            <span class="subtitle">You can benefit by listening the latest music release.</span>
+
+        </div>
+        <div class="cover">
+
+            <img class="cover-image" src="images/covers.jpg" alt="cover image">
+
+
+        </div>
+    </section>
+
+    <footer class="info">
+        <div class="internal-nav set-width">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="twitter.html">
+                        <img src="images/twitter.svg" alt="twitter">
+                        <span class="twitter">twitter</span>
+                    </a></li>
+                <li><a href="facebook.html">
+                        <img src="images/facebook.svg" alt="facebook">
+                        <span class="facebook">Facebook</span>
+                    </a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+</body>
+<script>
+    $(function () {
+        $(".bars").on("click", function () {
+            if ($(".menu").hasClass("active")) {
+                $(".menu").removeClass("active");
+            }
+            else {
+                $(".menu").addClass("active");
+            }
+        });
+    });
+</script>
+
+</html>
